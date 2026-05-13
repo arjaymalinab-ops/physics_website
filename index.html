@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectroSolve Pro</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <h2>ElectroSolve</h2>
+
+      <a href="#home">Home</a>
+      <a href="#formulaGuide">Formula Guide</a>
+      <a href="#calculators">Calculators</a>
+      <a href="#sampleProblems">Sample Problems</a>
+      <a href="#about">About</a>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+      <!-- HOME -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Electricity & Magnetism Calculator Website</h1>
+
+          <p>
+            Interactive educational website for solving Electricity and
+            Magnetism formulas with step-by-step solutions.
+          </p>
+
+          <button onclick="scrollToSection('calculators')">
+            Start Calculating
+          </button>
+        </div>
+      </section>
+
+      <!-- FORMULA GUIDE -->
+      <section id="formulaGuide" class="section">
+        <h1 class="section-title">Formula Guide</h1>
+
+        <div class="formula-grid">
+          <!-- ELECTRIC CHARGE -->
+          <div class="formula-card">
+            <h2>Electric Charge</h2>
+
+            <p class="formula">Q = ne</p>
+
+            <h3>Symbols</h3>
+
+            <ul>
+              <li>Q = Charge (Coulombs)</li>
+              <li>n = Number of electrons</li>
+              <li>e = 1.6 × 10⁻¹⁹ C</li>
+            </ul>
+
+            <h3>Steps</h3>
+
+            <ol>
+              <li>Identify number of electrons.</li>
+              <li>Multiply by electron charge.</li>
+              <li>Get total electric charge.</li>
+            </ol>
+          </div>
+
+          <!-- COULOMB -->
+          <div class="formula-card">
+            <h2>Coulomb's Law</h2>
+
+            <p class="formula">F = kq₁q₂ / r²</p>
+
+            <h3>Symbols</h3>
+
+            <ul>
+              <li>F = Electric Force (N)</li>
+              <li>k = 9 × 10⁹</li>
+              <li>q₁ = First charge</li>
+              <li>q₂ = Second charge</li>
+              <li>r = Distance</li>
+            </ul>
+
+            <h3>Steps</h3>
+
+            <ol>
+              <li>Multiply q₁ and q₂.</li>
+              <li>Multiply by constant k.</li>
+              <li>Square the distance.</li>
+              <li>Divide numerator by denominator.</li>
+            </ol>
+          </div>
+
+          <!-- ELECTRIC FIELD -->
+          <div class="formula-card">
+            <h2>Electric Field</h2>
+
+            <p class="formula">E = F / q</p>
+
+            <h3>Symbols</h3>
+
+            <ul>
+              <li>E = Electric Field (N/C)</li>
+              <li>F = Force</li>
+              <li>q = Charge</li>
+            </ul>
+
+            <h3>Steps</h3>
+
+            <ol>
+              <li>Identify force.</li>
+              <li>Identify charge.</li>
+              <li>Divide force by charge.</li>
+            </ol>
+          </div>
+
+          <!-- OHM -->
+          <div class="formula-card">
+            <h2>Ohm's Law</h2>
+
+            <p class="formula">V = IR</p>
+
+            <h3>Symbols</h3>
+
+            <ul>
+              <li>V = Voltage (V)</li>
+              <li>I = Current (A)</li>
+              <li>R = Resistance (Ω)</li>
+            </ul>
+
+            <h3>Steps</h3>
+
+            <ol>
+              <li>Identify current.</li>
+              <li>Identify resistance.</li>
+              <li>Multiply I and R.</li>
+            </ol>
+          </div>
+
+          <!-- POWER -->
+          <div class="formula-card">
+            <h2>Electric Power</h2>
+
+            <p class="formula">P = VI</p>
+
+            <h3>Symbols</h3>
+
+            <ul>
+              <li>P = Power (Watts)</li>
+              <li>V = Voltage</li>
+              <li>I = Current</li>
+            </ul>
+
+            <h3>Steps</h3>
+
+            <ol>
+              <li>Identify voltage.</li>
+              <li>Identify current.</li>
+              <li>Multiply V and I.</li>
+            </ol>
+          </div>
+
+          <!-- RESISTANCE -->
+          <div class="formula-card">
+            <h2>Resistance</h2>
+
+            <p class="formula">R = V / I</p>
+
+            <h3>Symbols</h3>
+
+            <ul>
+              <li>R = Resistance</li>
+              <li>V = Voltage</li>
+              <li>I = Current</li>
+            </ul>
+
+            <h3>Steps</h3>
+
+            <ol>
+              <li>Identify voltage.</li>
+              <li>Identify current.</li>
+              <li>Divide V by I.</li>
+            </ol>
+          </div>
+
+          <!-- MAGNETIC -->
+          <div class="formula-card">
+            <h2>Magnetic Force</h2>
+
+            <p class="formula">F = BIL sin θ</p>
+
+            <h3>Symbols</h3>
+
+            <ul>
+              <li>F = Magnetic Force</li>
+              <li>B = Magnetic Field</li>
+              <li>I = Current</li>
+              <li>L = Length</li>
+              <li>θ = Angle</li>
+            </ul>
+
+            <h3>Steps</h3>
+
+            <ol>
+              <li>Multiply B, I, and L.</li>
+              <li>Get sin θ.</li>
+              <li>Multiply all values.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALCULATORS -->
+      <section id="calculators" class="section">
+        <h1 class="section-title">Interactive Calculators</h1>
+
+        <div class="calculator-grid">
+          <!-- ELECTRIC CHARGE -->
+          <div class="calculator-card">
+            <h2>Electric Charge</h2>
+
+            <input type="number" id="n" placeholder="Number of Electrons" />
+
+            <button onclick="calculateCharge()">Calculate</button>
+
+            <div class="output" id="chargeOutput"></div>
+          </div>
+
+          <!-- COULOMB -->
+          <div class="calculator-card">
+            <h2>Coulomb's Law</h2>
+
+            <input type="number" id="q1" placeholder="Charge 1" />
+            <input type="number" id="q2" placeholder="Charge 2" />
+            <input type="number" id="r" placeholder="Distance" />
+
+            <button onclick="calculateCoulomb()">Calculate</button>
+
+            <div class="output" id="coulombOutput"></div>
+          </div>
+
+          <!-- ELECTRIC FIELD -->
+          <div class="calculator-card">
+            <h2>Electric Field</h2>
+
+            <input type="number" id="force" placeholder="Force" />
+            <input type="number" id="charge" placeholder="Charge" />
+
+            <button onclick="calculateField()">Calculate</button>
+
+            <div class="output" id="fieldOutput"></div>
+          </div>
+
+          <!-- OHM -->
+          <div class="calculator-card">
+            <h2>Ohm's Law</h2>
+
+            <input type="number" id="current" placeholder="Current" />
+            <input type="number" id="resistance" placeholder="Resistance" />
+
+            <button onclick="calculateVoltage()">Calculate</button>
+
+            <div class="output" id="voltageOutput"></div>
+          </div>
+
+          <!-- POWER -->
+          <div class="calculator-card">
+            <h2>Electric Power</h2>
+
+            <input type="number" id="voltagePower" placeholder="Voltage" />
+            <input type="number" id="currentPower" placeholder="Current" />
+
+            <button onclick="calculatePower()">Calculate</button>
+
+            <div class="output" id="powerOutput"></div>
+          </div>
+
+          <!-- RESISTANCE -->
+          <div class="calculator-card">
+            <h2>Resistance</h2>
+
+            <input type="number" id="voltageR" placeholder="Voltage" />
+            <input type="number" id="currentR" placeholder="Current" />
+
+            <button onclick="calculateResistance()">Calculate</button>
+
+            <div class="output" id="resistanceOutput"></div>
+          </div>
+
+          <!-- MAGNETIC -->
+          <div class="calculator-card">
+            <h2>Magnetic Force</h2>
+
+            <input type="number" id="B" placeholder="Magnetic Field" />
+            <input type="number" id="I" placeholder="Current" />
+            <input type="number" id="L" placeholder="Length" />
+            <input type="number" id="theta" placeholder="Angle" />
+
+            <button onclick="calculateMagnetic()">Calculate</button>
+
+            <div class="output" id="magneticOutput"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SAMPLE PROBLEMS -->
+      <!-- SAMPLE PROBLEMS -->
+      <section id="sampleProblems" class="section">
+        <h1 class="section-title">Sample Problems</h1>
+
+        <div class="filter-buttons">
+          <button onclick="filterProblems('all')">All</button>
+          <button onclick="filterProblems('charge')">Electric Charge</button>
+          <button onclick="filterProblems('coulomb')">Coulomb</button>
+          <button onclick="filterProblems('field')">Electric Field</button>
+          <button onclick="filterProblems('ohm')">Ohm's Law</button>
+          <button onclick="filterProblems('power')">Power</button>
+          <button onclick="filterProblems('resistance')">Resistance</button>
+          <button onclick="filterProblems('magnetic')">Magnetic</button>
+        </div>
+
+        <div class="problem-container">
+          <!-- ELECTRIC CHARGE -->
+          <div class="problem-card charge">
+            <h3>Electric Charge Problem 1</h3>
+
+            <p><strong>Formula:</strong> Q = ne</p>
+
+            <p>n = 5 × 10²⁰</p>
+            <p>e = 1.6 × 10⁻¹⁹ C</p>
+
+            <p>Q = (5 × 10²⁰)(1.6 × 10⁻¹⁹)</p>
+
+            <p>Q = 80 C</p>
+
+            <p><strong>Answer:</strong> 80 Coulombs</p>
+
+            <p class="simple-explanation">
+              Multiply the number of electrons by the charge of one electron.
+            </p>
+          </div>
+
+          <div class="problem-card charge">
+            <h3>Electric Charge Problem 2</h3>
+
+            <p><strong>Formula:</strong> Q = ne</p>
+
+            <p>n = 3 × 10²⁰</p>
+            <p>e = 1.6 × 10⁻¹⁹ C</p>
+
+            <p>Q = (3 × 10²⁰)(1.6 × 10⁻¹⁹)</p>
+
+            <p>Q = 48 C</p>
+
+            <p><strong>Answer:</strong> 48 Coulombs</p>
+
+            <p class="simple-explanation">
+              Multiply the given values to get the total charge.
+            </p>
+          </div>
+
+          <div class="problem-card charge">
+            <h3>Electric Charge Problem 3</h3>
+
+            <p><strong>Formula:</strong> Q = ne</p>
+
+            <p>n = 8 × 10²⁰</p>
+            <p>e = 1.6 × 10⁻¹⁹ C</p>
+
+            <p>Q = (8 × 10²⁰)(1.6 × 10⁻¹⁹)</p>
+
+            <p>Q = 128 C</p>
+
+            <p><strong>Answer:</strong> 128 Coulombs</p>
+
+            <p class="simple-explanation">
+              Electric charge is calculated using the electron charge formula.
+            </p>
+          </div>
+
+          <!-- COULOMB -->
+          <div class="problem-card coulomb">
+            <h3>Coulomb's Law Problem 1</h3>
+
+            <p><strong>Formula:</strong> F = kq₁q₂/r²</p>
+
+            <p>k = 9 × 10⁹</p>
+            <p>q₁ = 6 C</p>
+            <p>q₂ = 7 C</p>
+            <p>r² = 9</p>
+
+            <p>F = (9 × 10⁹)(6)(7) / 9</p>
+
+            <p>F = 42 × 10⁹ N</p>
+
+            <p><strong>Answer:</strong> 4.2 × 10¹⁰ Newtons</p>
+
+            <p class="simple-explanation">
+              Multiply the charges and constant, then divide by distance
+              squared.
+            </p>
+          </div>
+
+          <div class="problem-card coulomb">
+            <h3>Coulomb's Law Problem 2</h3>
+
+            <p><strong>Formula:</strong> F = kq₁q₂/r²</p>
+
+            <p>k = 9 × 10⁹</p>
+            <p>q₁ = 2 C</p>
+            <p>q₂ = 5 C</p>
+            <p>r² = 4</p>
+
+            <p>F = (9 × 10⁹)(2)(5) / 4</p>
+
+            <p>F = 22.5 × 10⁹ N</p>
+
+            <p><strong>Answer:</strong> 2.25 × 10¹⁰ Newtons</p>
+
+            <p class="simple-explanation">
+              Coulomb's Law computes the electric force between charges.
+            </p>
+          </div>
+
+          <div class="problem-card coulomb">
+            <h3>Coulomb's Law Problem 3</h3>
+
+            <p><strong>Formula:</strong> F = kq₁q₂/r²</p>
+
+            <p>k = 9 × 10⁹</p>
+            <p>q₁ = 4 C</p>
+            <p>q₂ = 3 C</p>
+            <p>r² = 16</p>
+
+            <p>F = (9 × 10⁹)(4)(3) / 16</p>
+
+            <p>F = 6.75 × 10⁹ N</p>
+
+            <p><strong>Answer:</strong> 6.75 × 10⁹ Newtons</p>
+
+            <p class="simple-explanation">
+              Divide the product of charges by the square of distance.
+            </p>
+          </div>
+
+          <!-- ELECTRIC FIELD -->
+          <div class="problem-card field">
+            <h3>Electric Field Problem 1</h3>
+
+            <p><strong>Formula:</strong> E = F/q</p>
+
+            <p>F = 200 N</p>
+            <p>q = 4 C</p>
+
+            <p>E = 200 / 4</p>
+
+            <p>E = 50 N/C</p>
+
+            <p><strong>Answer:</strong> 50 N/C</p>
+
+            <p class="simple-explanation">
+              Divide force by charge to get electric field.
+            </p>
+          </div>
+
+          <div class="problem-card field">
+            <h3>Electric Field Problem 2</h3>
+
+            <p><strong>Formula:</strong> E = F/q</p>
+
+            <p>F = 150 N</p>
+            <p>q = 3 C</p>
+
+            <p>E = 150 / 3</p>
+
+            <p>E = 50 N/C</p>
+
+            <p><strong>Answer:</strong> 50 N/C</p>
+
+            <p class="simple-explanation">
+              Electric field measures force per unit charge.
+            </p>
+          </div>
+
+          <div class="problem-card field">
+            <h3>Electric Field Problem 3</h3>
+
+            <p><strong>Formula:</strong> E = F/q</p>
+
+            <p>F = 300 N</p>
+            <p>q = 6 C</p>
+
+            <p>E = 300 / 6</p>
+
+            <p>E = 50 N/C</p>
+
+            <p><strong>Answer:</strong> 50 N/C</p>
+
+            <p class="simple-explanation">
+              Divide the electric force by charge.
+            </p>
+          </div>
+
+          <!-- OHM -->
+          <div class="problem-card ohm">
+            <h3>Ohm's Law Problem 1</h3>
+
+            <p><strong>Formula:</strong> V = IR</p>
+
+            <p>I = 2 A</p>
+            <p>R = 5 Ω</p>
+
+            <p>V = 2 × 5</p>
+
+            <p>V = 10 V</p>
+
+            <p><strong>Answer:</strong> 10 Volts</p>
+
+            <p class="simple-explanation">Multiply current and resistance.</p>
+          </div>
+
+          <div class="problem-card ohm">
+            <h3>Ohm's Law Problem 2</h3>
+
+            <p>I = 3 A</p>
+            <p>R = 4 Ω</p>
+
+            <p>V = 3 × 4</p>
+
+            <p>V = 12 V</p>
+
+            <p><strong>Answer:</strong> 12 Volts</p>
+          </div>
+
+          <div class="problem-card ohm">
+            <h3>Ohm's Law Problem 3</h3>
+
+            <p>I = 6 A</p>
+            <p>R = 2 Ω</p>
+
+            <p>V = 6 × 2</p>
+
+            <p>V = 12 V</p>
+
+            <p><strong>Answer:</strong> 12 Volts</p>
+          </div>
+
+          <!-- POWER -->
+          <div class="problem-card power">
+            <h3>Electric Power Problem 1</h3>
+
+            <p><strong>Formula:</strong> P = VI</p>
+
+            <p>V = 12 V</p>
+            <p>I = 3 A</p>
+
+            <p>P = 12 × 3</p>
+
+            <p>P = 36 W</p>
+
+            <p><strong>Answer:</strong> 36 Watts</p>
+
+            <p class="simple-explanation">Multiply voltage and current.</p>
+          </div>
+
+          <div class="problem-card power">
+            <h3>Electric Power Problem 2</h3>
+
+            <p>V = 20 V</p>
+            <p>I = 2 A</p>
+
+            <p>P = 20 × 2</p>
+
+            <p>P = 40 W</p>
+
+            <p><strong>Answer:</strong> 40 Watts</p>
+          </div>
+
+          <div class="problem-card power">
+            <h3>Electric Power Problem 3</h3>
+
+            <p>V = 15 V</p>
+            <p>I = 5 A</p>
+
+            <p>P = 15 × 5</p>
+
+            <p>P = 75 W</p>
+
+            <p><strong>Answer:</strong> 75 Watts</p>
+          </div>
+
+          <!-- RESISTANCE -->
+          <div class="problem-card resistance">
+            <h3>Resistance Problem 1</h3>
+
+            <p><strong>Formula:</strong> R = V/I</p>
+
+            <p>V = 20 V</p>
+            <p>I = 4 A</p>
+
+            <p>R = 20 / 4</p>
+
+            <p>R = 5 Ω</p>
+
+            <p><strong>Answer:</strong> 5 Ohms</p>
+
+            <p class="simple-explanation">Divide voltage by current.</p>
+          </div>
+
+          <div class="problem-card resistance">
+            <h3>Resistance Problem 2</h3>
+
+            <p>V = 24 V</p>
+            <p>I = 3 A</p>
+
+            <p>R = 24 / 3</p>
+
+            <p>R = 8 Ω</p>
+
+            <p><strong>Answer:</strong> 8 Ohms</p>
+          </div>
+
+          <div class="problem-card resistance">
+            <h3>Resistance Problem 3</h3>
+
+            <p>V = 50 V</p>
+            <p>I = 5 A</p>
+
+            <p>R = 50 / 5</p>
+
+            <p>R = 10 Ω</p>
+
+            <p><strong>Answer:</strong> 10 Ohms</p>
+          </div>
+
+          <!-- MAGNETIC -->
+          <div class="problem-card magnetic">
+            <h3>Magnetic Force Problem 1</h3>
+
+            <p><strong>Formula:</strong> F = BIL sin θ</p>
+
+            <p>B = 2 T</p>
+            <p>I = 3 A</p>
+            <p>L = 4 m</p>
+            <p>θ = 90°</p>
+
+            <p>F = 2 × 3 × 4 × sin(90°)</p>
+
+            <p>F = 24 N</p>
+
+            <p><strong>Answer:</strong> 24 Newtons</p>
+
+            <p class="simple-explanation">
+              Multiply magnetic field, current, length, and sine angle.
+            </p>
+          </div>
+
+          <div class="problem-card magnetic">
+            <h3>Magnetic Force Problem 2</h3>
+
+            <p>B = 1 T</p>
+            <p>I = 5 A</p>
+            <p>L = 6 m</p>
+            <p>θ = 90°</p>
+
+            <p>F = 1 × 5 × 6 × sin(90°)</p>
+
+            <p>F = 30 N</p>
+
+            <p><strong>Answer:</strong> 30 Newtons</p>
+          </div>
+
+          <div class="problem-card magnetic">
+            <h3>Magnetic Force Problem 3</h3>
+
+            <p>B = 4 T</p>
+            <p>I = 2 A</p>
+            <p>L = 5 m</p>
+            <p>θ = 90°</p>
+
+            <p>F = 4 × 2 × 5 × sin(90°)</p>
+
+            <p>F = 40 N</p>
+
+            <p><strong>Answer:</strong> 40 Newtons</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h1 class="section-title">About the Developers</h1>
+
+        <div class="about-description">
+          <p>
+            ElectroSolve Pro is an educational website designed to help students
+            solve Electricity and Magnetism problems using interactive
+            calculators, formulas, and step-by-step solutions.
+          </p>
+        </div>
+
+        <!-- MEMBERS -->
+        <div class="members-container">
+          <!-- MEMBER 1 -->
+          <div class="member-card">
+            <div class="member-image">
+              <img src="images/member1.jpg" alt="Member 1" />
+            </div>
+
+            <h3>Member Name 1</h3>
+
+            <p>Frontend Developer</p>
+          </div>
+
+          <!-- MEMBER 2 -->
+          <div class="member-card">
+            <div class="member-image">
+              <img src="images/member2.jpg" alt="Member 2" />
+            </div>
+
+            <h3>Member Name 2</h3>
+
+            <p>Backend Developer</p>
+          </div>
+
+          <!-- MEMBER 3 -->
+          <div class="member-card">
+            <div class="member-image">
+              <img src="images/member3.jpg" alt="Member 3" />
+            </div>
+
+            <h3>Member Name 3</h3>
+
+            <p>UI/UX Designer</p>
+          </div>
+
+          <!-- MEMBER 4 -->
+          <div class="member-card">
+            <div class="member-image">
+              <img src="images/member4.jpg" alt="Member 4" />
+            </div>
+
+            <h3>Member Name 4</h3>
+
+            <p>Researcher</p>
+          </div>
+
+          <!-- MEMBER 5 -->
+          <div class="member-card">
+            <div class="member-image">
+              <img src="images/member5.jpg" alt="Member 5" />
+            </div>
+
+            <h3>John Roy Malinab</h3>
+
+            <p>Developer</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
