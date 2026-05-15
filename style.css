@@ -289,3 +289,41 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.tutorial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.tutorial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+}
+
+.tutorial-card a {
+  color: orange;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.tutorial-card a:hover {
+  text-decoration: underline;
+}
+
+.tutorial-card h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.tutorial-card p {
+  color: #555;
+  line-height: 1.6;
+}
