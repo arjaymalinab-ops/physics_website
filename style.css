@@ -275,3 +275,13 @@ body {
 .member-card p {
   color: #666;
 }
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
